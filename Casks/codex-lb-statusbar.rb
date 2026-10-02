@@ -1,6 +1,6 @@
 cask "codex-lb-statusbar" do
-  version "0.4.0"
-  sha256 "d64ec4ae67200fdb8db5d3c24b62d649e48bbfc51b75df332d4d6f0c843a658c"
+  version "0.4.1"
+  sha256 "6df445ab5ac914c9e9260d10d5dab74d7b5340f57c5ae08853559e371021e596"
 
   url "https://github.com/sm1ee/codex-lb-statusbar/releases/download/v#{version}/CodexLBStatusBar-#{version}.dmg"
   name "Codex LB Status Bar"
