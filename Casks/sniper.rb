@@ -1,6 +1,6 @@
 cask "sniper" do
-  version "0.3.4"
-  sha256 "c0bf7866ee3aa6e8ca382ae9a8a52380783bab3e7bceaf45228070d01f599fbf"
+  version "0.3.5"
+  sha256 "05288dfe998e2f6123032aac5109d4fb29ef87edeed7d10953365e6a284d5969"
 
   url "https://github.com/sm1ee/Sniper/releases/download/v#{version}/Sniper-#{version}-universal.dmg"
   name "Sniper"
