@@ -1,6 +1,6 @@
 cask "sniper" do
-  version "0.3.5"
-  sha256 "05288dfe998e2f6123032aac5109d4fb29ef87edeed7d10953365e6a284d5969"
+  version "0.4.0"
+  sha256 "96a99181e7da43ebc618a28707cd345172fbcc1237bc722f285263d2407dc7ff"
 
   url "https://github.com/sm1ee/Sniper/releases/download/v#{version}/Sniper-#{version}-universal.dmg"
   name "Sniper"
@@ -18,6 +18,7 @@ cask "sniper" do
 
   app "Sniper.app"
   binary "#{appdir}/Sniper.app/Contents/MacOS/sniper-cli"
+  binary "#{appdir}/Sniper.app/Contents/MacOS/sniper-server"
 
   zap trash: [
     "~/.sniper",
@@ -27,6 +28,8 @@ cask "sniper" do
   caveats <<~EOS
     Sniper is ad-hoc signed, not notarized. On first launch macOS may block it, or
     sniper-cli: open System Settings > Privacy & Security and click "Open Anyway".
+
+    sniper-server runs Sniper without a window.
 
     sniper-cli is on your PATH. To let Claude Code and Codex drive Sniper:
       sniper-cli skills install --all --dry-run
